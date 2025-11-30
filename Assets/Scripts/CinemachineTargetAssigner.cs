@@ -14,7 +14,7 @@ public class CinemachineTargetAssigner : MonoBehaviourPun
         var cineCam = FindObjectOfType<CinemachineCamera>();
         if (cineCam != null && followTarget != null)
         {
-            // Gán trực tiếp vào virtual camera (không phải component con)
+            // Gán trực tiếp vào virtual camera
             cineCam.Follow = followTarget;
             cineCam.LookAt = followTarget;
 

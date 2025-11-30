@@ -133,7 +133,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     {
         yield return new WaitForSeconds(0.2f);
 
-        // ✅ Đảm bảo không spawn trùng chỗ (có thể gán điểm cố định hoặc cải tiến)
+        // ✅ Đảm bảo không spawn trùng chỗ
         Vector3 spawnPos = new Vector3(Random.Range(-5f, 5f), 0, Random.Range(-5f, 5f));
 
         // ✅ Spawn prefab mới

@@ -36,16 +36,5 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         Vector3 spawnPos = new Vector3(Random.Range(-5, 5), 0, Random.Range(-5, 5));
         GameObject player = PhotonNetwork.Instantiate(playerPrefab.name, spawnPos, Quaternion.identity);
-
-        // Nếu prefab không có camera thì gắn thêm
-        // if (player.GetComponentInChildren<Camera>() == null)
-        // {
-        //     GameObject cam = new GameObject("PlayerCamera");
-        //     cam.tag = "MainCamera";
-        //     cam.AddComponent<Camera>();
-        //     cam.transform.SetParent(player.transform);
-        //     cam.transform.localPosition = new Vector3(0, 5, -7);
-        //     cam.transform.LookAt(player.transform);
-        // }
     }
 }
